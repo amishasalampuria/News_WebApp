@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = 'stylesheet' href="style.css">
+    
+</head>
+<body>
+    
+    <nav class ='navbar'>
+        
+        <div class="main-logo">
+            <div class="logo">
+               <a onclick="reload()"><div class="circle"></div></a> 
+            </div>
+            <span>Samachar</span>
+        </div>
+        
+     
+
+        <div class="nav-links">
+            <ul class="flex">
+            <li class="nav-links-item" id ='Finance' onclick="clickedNavItem('Finance')">Finance</li>
+            <li class="nav-links-item" id ='Technology' onclick="clickedNavItem('Technology')">Technology</li>
+            <li class="nav-links-item" id ='Politics' onclick="clickedNavItem('Politics')">Politics</li>
+            <li class="nav-links-item" id ='Sports' onclick="clickedNavItem('Sports')">Sports</li>
+            </ul>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="E.g.Music" id="text"  class = 'text'>
+            <button id="btn" class = 'btn'>Search</button>
+        </div>   
+
+        <button class ='btn1'  >
+        <svg class="BOTrp" width="24" height="24" viewBox="0 0 24 24" version="1.1" aria-hidden="false"><desc lang="en-US">navigation menu</desc><path d="M3 16h18v2H3v-2ZM3 6v2h18V6H3Zm0 7h18v-2H3v2Z"></path></svg>
+        </button>
+    </nav>
+
+    <main>
+            <div class="cards-container" id = "cards-container" >
+                
+            </div>
+
+            <template class = 'template-news-card' id = 'template-news-card'>
+                <div class="card">
+                    <div class="card-header"><img src="https://via.placeholder.com/400x200" alt="No image" id="news-img">></div>
+                    <div class="card-content">
+                        <h3 id="news-title">This is title</h3>
+                        <h6 class="news-source" id="news-source">this is source!</h6>
+                        <P id="news-desc">this is description</P>
+                    </div>
+                </div>
+            </template>
+
+    </main>
+    <script src = 'script.js'></script>
+</body>
+</html>
